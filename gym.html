@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>Gym</title>
+<!-- bootstrap css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Responsive-->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- fevicon -->
+<link rel="icon" href="images/fevicon.png" type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<style>
+  .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(31, 30, 30);
+    }
+
+    .container {
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        text-align: center;
+        margin-left: 27.5%;
+    }
+
+    .form-group input {
+    font-family: 'Baloo Bhai', cursive;
+    text-align: center;
+    display: block;
+    width: 290px;
+    padding: 0px;
+    border: 2px solid black;
+    margin: 8px auto;
+    font-size: 17px;
+    border-radius: 10px;
+    }
+
+    .container h1 {
+        color: rgb(20, 9, 9);
+        text-align: center;
+    }
+
+    .container button {
+        background-color: green;
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+    .header{
+    height: 80px;
+    width: 100%;
+    background-color:rgba(53, 10, 79, .9);
+    display:flex;
+    padding: 0;
+    background-origin: padding-box;
+    color: white;
+    z-index: 1000;
+    position: relative;
+}
+.header h1{
+    font-size:29px;
+    margin-left:12px;
+    height: 10px;
+    width: 1px;
+    display: flex;
+    margin-top: 10px;
+    color: bisque;
+}
+.header h1 i:nth-child(1){
+    margin-right: 2px;
+}
+.header h1 i:nth-child(2){
+    margin-left: 2px;
+}
+.header p{
+    font-size:20px;
+    margin-left: 0px;
+    float: left;
+    padding-top: 20px;
+    padding-left: 0px;
+    margin-top: 22px;
+    color: black;
+}
+.header ul{
+    list-style: none;
+    display: flex;
+    position:relative;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.header ul li{
+    list-style: none;
+    margin-left: 90px;
+    margin-right: 35px;
+    padding-top: 12px;
+}
+.header ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.aboutdd{
+    display: none;
+}
+
+.header ul li:hover .aboutdd{
+    display:block;
+    position: absolute;
+    background-color:rgba(53, 10, 79, .9);   
+    margin-top: 28px;
+    margin-left: -10px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+.section{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #ddd;
+}
+.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 100px;
+}
+.content-section{
+	float: left;
+	width: 55%;
+}
+.image-section{
+	float: right;
+	width: 40%;
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+}
+.content-section .title{
+	text-transform: uppercase;
+	font-size: 28px;
+}
+.content-section .content h3{
+	margin-top: 20px;
+	color:#5d5d5d;
+	font-size: 21px;
+}
+.content-section .content p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.content-section .content .button{
+	margin-top: 30px;
+}
+.content-section .content .button a{
+	background-color: #3d3d3d;
+	padding:12px 40px;
+	text-decoration: none;
+	color:white;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover{
+	background-color: #a52a2a;
+	color:white;
+}
+.content-section .social{
+	margin: 40px 40px;
+}
+.content-section .social i{
+	color:#a52a2a;
+	font-size: 30px;
+	padding:0px 10px;
+}
+.content-section .social i:hover{
+	color:#3d3d3d;
+}
+@media screen and (max-width: 768px){
+	.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.image-section{
+	float:none;
+	width:100%;
+	
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+.content-section .title{
+	text-align: center;
+	font-size: 19px;
+}
+.content-section .content .button{
+	text-align: center;
+}
+.content-section .content .button a{
+	padding:9px 30px;
+}
+.content-section .social{
+	text-align: center;
+}
+
+}
+.box {
+    width: 20%;
+    float: left;
+    margin: 20px 35px;
+    background:linear-gradient(to right top,indigo,white);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 1 5px 5px rgba(0, 0, 0, 0.15);
+  }
+  .box > img {
+width: 100%;
+    height: 250px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  .box > h4 {
+    margin: 0px 10px;
+    text-align: center;
+    color:cornsilk;
+  }
+  .box > p {
+    margin: 10px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 25px;
+    padding: 0;
+    font-family:cursive;
+    color:whitesmoke
+  }
+  .box > a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    background-color:darkgoldenrod;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .box a:hover {
+    background-color:crimson;
+    color: white;
+  }
+  .header{
+    height: 80px;
+    width: 100%;
+    background-color:rgba(53, 10, 79, .9);
+    display:flex;
+    padding: 0;
+    background-origin: padding-box;
+    color: white;
+    z-index: 1000;
+    position: relative;
+}
+.header h1{
+    font-size:29px;
+    margin-left:12px;
+    height: 10px;
+    width: 1px;
+    display: flex;
+    margin-top: 10px;
+    color: bisque;
+}
+.header h1 i:nth-child(1){
+    margin-right: 2px;
+}
+.header h1 i:nth-child(2){
+    margin-left: 2px;
+}
+.header p{
+    font-size:20px;
+    margin-left: 0px;
+    float: left;
+    padding-top: 20px;
+    padding-left: 0px;
+    margin-top: 22px;
+    color: blanchedalmond;
+}
+.header ul{
+    list-style: none;
+    display: flex;
+    position:relative;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.header ul li{
+    list-style: none;
+    margin-left: 90px;
+    margin-right: 35px;
+    padding-top: 12px;
+}
+.header ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.aboutdd{
+    display: none;
+}
+
+.header ul li:hover .aboutdd{
+    display:block;
+    position: absolute;
+    background-color:rgba(53, 10, 79, .9);   
+    margin-top: 28px;
+    margin-left: -10px;
+}
+.aboutdd ul li{
+    align-items: center;
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: transparent;
+}
+.header ul li:hover .aboutdd ul{
+    display: block;
+}
+.aboutdd ul li:hover{
+    background-color:gold;
+    width: 100px;
+    display: block;
+}
+.header ul li:hover .aboutdd ul li{
+    border-bottom: 1px solid goldenrod;
+}
+.templesdd{
+    display: none;
+}
+
+.header ul li:hover .templesdd{
+    display:block;
+    position: absolute;
+    background-color:rgba(53, 10, 79, .9);   
+    margin-top: 28px;
+    margin-left: -10px;
+}
+.templesdd ul li{
+    align-items: center;
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: transparent;
+}
+.header ul li:hover .templesdd ul{
+    display: block;
+
+}
+.templesdd ul li:hover{
+    background-color:gold;
+    display: block;
+    width: 100px;
+}
+.header ul li:hover .templesdd ul li{
+    border-bottom: 1px solid goldenrod;
+}
+
+</style>
+</head>
+<body>
+	<!--header section start -->
+    <div class="header_section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+                </div>
+                <div class="col-md-9">
+                    <div class="menu_text">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>                                                    
+                            <li><a href="price.html">SERVICES</a></li>
+                            <li><a href="gym.html">MORE</a></li>
+                            <li><a href="contact.html">CONTACT US</a></li>
+                            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="index.html">HOME</a>
+                  <a href="price.html">SERVICES</a>
+                  <a href="gym.html">MORE</a>
+                  <a href="contact.html">CONTACT US</a>
+                </div>
+                </div>
+                <span  style="font-size:33px;cursor:pointer; color: #ffffff;" onclick="openNav()"><img src="images/toggle.png" class="toggle_menu"></span>
+                </div>  
+                </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- header section end -->
+    <!-- our service section start -->
+    <div class="our_section layout_padding">
+      <div class="container">
+        <h1 class="our_text"><strong>WORKOUTS</strong></h1>
+        <div class="row padding_top_0">
+          <div class="col-lg-4">
+            <div class="image_7"><a href="#"><img src="images/img-1.png"></a></div>
+            <h2 class="design_text">WEIGHT LIFTING</h2>
+            <p class="fact_text">Start off by doing 10 to 15 reps of each exercise. Aim for 1 to 2 sets to start. As you build strength, you can add extra sets, and also increase the weight.</p>
+          </div>
+            <div class="col-lg-4">
+              <div class="image_7"><a href="#"><img src="images/img-2.png"></a></div>
+            <h2 class="design_text">INDOOR CYCLING</h2>
+            <p class="fact_text">Besides torching 400 to 600 calories in a 45-minute class, indoor cycling also helps rev up your metabolism (your body’s calorie-burning engine) and offers the opportunity to tone and strengthen all of the muscles in your legs, glutes, and core.</p>
+            </div>
+            <div class="col-lg-4">
+              <div class="image_7"><a href="#"><img src="images/img-3.png"></a></div>
+            <h2 class="design_text">CORE POWER</h2>
+            <p class="fact_text">Holding the plank position takes strength and endurance in your abs, back, and core. The plank is one of the best exercises for core conditioning, but it also works your glutes and hamstrings, supports proper posture, and improves balance. </p>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://image.cnbcfm.com/api/v1/image/106627689-1595440038852-attractive-fit-young-woman-in-sport-wear-girl-trains-
+      with-dumbbells-make-plank-at-the-loft-studio_t20_pLKdXP.jpg?v=1618411024&w=740&h=416" alt="" />
+      <h4>Exercise</h4>
+      <p>Sedentary: little or no exercise 1,926
+          Exercise 1-3 times/week 2,207
+          Exercise 4-5 times/week 2,351
+          Daily exercise or intense exercise 3-4 times/week 2,488
+          Intense exercise 6-7 times/week 2,769
+          Very intense exercise daily, or physical job 3,050
+          Exercise: 15-30 minutes of elevated heart rate activity.
+          Intense exercise: 45-120 minutes of elevated heart rate activity.
+          Very intense exercise: 2+ hours of elevated heart rate activity</p>                  
+      <a href="https://www.healthline.com/health/fitness-exercise/10-best-exercises-everyday#start-here">Read More</a>
+    </div>
+  </div>
+  <div class="box">
+      <img src="https://www.pennmedicine.org/-/media/images/miscellaneous/food%20and%20drink/fish_fruits_veggies_seeds.ashx?mw=620&mh=408" alt="" />
+      <h4>Diet</h4> 
+      <p>  Small, routinely dispersed meals increase BMR. On the other hand, starvation can reduce BMR by as much as 30%. Similar to a phone
+           that goes into power-saving mode during the last 5% of its battery, a human body will make sacrifices such as energy levels, moods,
+            upkeep of bodily physique, and brain functions in order to more efficiently utilize what little caloric energy is being used to 
+            sustain it. For More Customized diet Ask From our Gym trainer as per your Physique Goals.</p>                  
+      <a href="https://www.healthline.com/nutrition/healthy-eating-tips#TOC_TITLE_HDR_3">Read More</a>
+    </div>
+    <div class="box">
+      <img src="https://www.healthynudgez.com/wp-content/uploads/2019/01/weight-gain-1.jpg" alt="" />
+      <h4>Weight Gain</h4>
+      <p>Homemade protein smoothies. Drinking homemade protein smoothies can be a highly nutritious and quick way to gain weight.
+          Milk. Milk has been used as a weight gainer or muscle builder for decades (1).
+          Rice.
+          Nuts and nut butters.
+          Red meats.
+          Potatoes and starches.
+          Salmon and oily fish.
+          Protein supplements.</p>                  
+      <a href="https://www.healthline.com/nutrition/how-to-gain-weight">Read More</a>
+    </div>
+    <div class="box">
+      <img src="https://i.insider.com/5ec44dceaee6a8013c1cf6ab?width=1000&format=jpeg&auto=webp" alt="" />
+      <h4>Weight Loss</h4>
+      <p>Eat a high protein breakfast.
+          A void sugary drinks and fruit juice.
+          Drink water before meals.
+          Choose weight-loss-friendly foods.
+          Eat soluble fiber.
+          Drink coffee or tea.
+          Base your diet on whole foods.
+          Eat slowly.</p>                  
+  
+      <a href="https://www.healthline.com/nutrition/how-to-lose-weight-as-fast-as-possible#ways-to-lose-weight">Read More</a>
+    </div>
+  
+    <!-- our service section end -->
+    <!-- footer section start -->
+    <div class="footer_section layout_padding">
+      <div class="footer_section_2">
+        <div class="container">
+          <div class="row map_addres">
+            <div class="col-sm-12 col-lg-4">
+              <div class="map_text"><img src="images/map-icon.png"><span class="map_icon">Bank Colony, Krishna Nagar, Mathura, Uttar Pradesh, 281004</span></div>
+            </div>
+                  <div class="col-sm-12 col-lg-4">
+                    <div class="map_text"><img src="images/phone-icon.png"><span class="map_icon">( +91 9876543210 )</span></div>
+                  </div>
+            <div class="col-sm-12 col-lg-4">
+              <div class="map_text"><img src="images/email-icon.png"><span class="map_icon">GymIgnite@gmail.com</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+    <!-- footer section end -->
+
+
+
+
+
+
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+      <script>
+      $(document).ready(function(){
+      $(".fancybox").fancybox({
+         openEffect: "none",
+         closeEffect: "none"
+         });
+         
+         $(".zoom").hover(function(){
+         
+         $(this).addClass('transition');
+         }, function(){
+         
+         $(this).removeClass('transition');
+         });
+         });
+         </script> 
+
+
+   <script>
+    function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+   document.getElementById("myNav").style.width = "0%";
+   }
+</script>
+
+
+
+     
+</body>
+</html>

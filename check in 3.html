@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+    <title>GYMIGNITE</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>Gym</title>
+<!-- bootstrap css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Responsive-->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- fevicon -->
+<link rel="icon" href="images/fevicon.png" type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+</head>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        color: black;
+        margin: 0px;
+        padding: 0px;
+		background-repeat:repeat;
+		background-size: 100%;
+        background-image:url(img/projectfc.jpg);
+    }
+
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: crimson;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .form-group input {
+    font-family: 'Baloo Bhai', cursive;
+    text-align: center;
+    display: block;
+    width: 290px;
+    padding: 0px;
+    border: 2px solid black;
+    margin: 8px auto;
+    font-size: 17px;
+    border-radius: 31px;
+    }
+
+    .container h1 {
+        color: crimson;
+        text-align: center;
+    }
+
+    .container button {
+        background-color: green;
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+    
+  
+
+</style>
+
+
+  
+		
+	<script type="text/javascript">
+	
+	function calcBMR(){
+		var weight= parseFloat(document.bmrform.weight.value);
+		//var weight = document.getElementById("weight").value;
+
+		var height= parseFloat(document.bmrform.height.value);
+		//var height = document.getElementById("height").value:
+
+		var age= parseInt(document.bmrform.age.value);
+		//var age =document.getElementById("age").value;
+
+		var bmr = 66.47 + (13.75 * weight) + (5.003 * height) - (6.755 * age);
+
+		document.bmrform.bmr.value = Math.round(bmr*100)/100.0;
+		//document.getElementById("bmr").value = bmr;
+    }
+	
+	</script>
+
+
+<h1 style="text-align: center;">FITNESS CALCULATOR</h1>
+
+	<!--
+		MBR = 66.47 + (13.75 * wight in kg ) + (5.003 *height in cm ) - ( 6.755 * age in years )
+	--> <br><br><br>
+		<form method="post" action="#" name ="bmrform">
+	  	<fieldset>
+			<legend>BMR Calculation</legend>
+			<label for="">Enter Weight in Kgs:</label>
+			<input type="test" id="weight" value="" size ="20" placeholder="Enter weight in kgs" name="weight" required>
+			<br>
+			<label for="">Enter height in cms:</label>
+			<input type ="text" id="height" value ="" size="20" placeholder="Enter Height in cms" name="height" required>
+			<br>
+			<label for="">Enter Age in Years: </label>
+			<input type="text" id="age" value="" size="20" placeholder="Enter Age in Years" nam="age"required>
+			<br>
+				<input type="reset" value ="reset">
+				<input type="button" value="calcuate BMR" onClick="calcBMR();" id="calc">
+			<br>
+			<label for="">BMR: </label>
+			<input type="text" value="" size="20" placeholder="Result -BMR" name="bmr" id="bmr" readonly>
+	 	</fieldset>
+		</form>
+	
+	</body>
+	</html>
+			
